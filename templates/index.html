@@ -1,6 +1,20 @@
 {% extends 'base.html' %}
 {%block head%}
+<style>
+	h1 {text-align: center;}
+</style>
 {%endblock%}
 {%block body%}
-<h1>Hello3!</h1>
+	<h1>WiFi Scan Result</h1>
+	{%for cell in wifiscan%}
+		<p>{{cell['essid']}}</p>
+	{%endfor%}
+	{#<p>{{wifiscan[0]}}</p>#}
+	<form action="#" method="post">
+		<p>WiFi SSID</p>
+		<p><input type="text" name="ssid"/></p>
+		<p>WiFi password</p>
+		<p><input type="password" name="pw"/></p>
+		<p><input type="submit" value="save"/></p>
+	</form>
 {%endblock%}

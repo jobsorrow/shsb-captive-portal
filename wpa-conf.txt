@@ -1,0 +1,1 @@
+network={ssid="test"psk="test"}

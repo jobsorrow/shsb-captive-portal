@@ -4,7 +4,7 @@
 {%block body%}
 	<header>
 		<h3>WiFi Scan Result</h3>
-		
+		<hr>
 	</header>
 	{%for cell in wifiscan%}
 		<p>{{cell['essid']}}</p>
@@ -26,13 +26,6 @@
 	</div>
 
 	<style type="text/css">
-		header {
-			padding: 10px;
-			text-align: center;
-		}
-
-		 p {
-			text-align: center;	
-		}
+		
 	</style>
 {%endblock%}
